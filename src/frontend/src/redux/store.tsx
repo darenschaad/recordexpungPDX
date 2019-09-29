@@ -9,11 +9,13 @@ import RequestMiddleware from './middleware/request';
 import { usersReducer } from './users/reducer';
 import { recordsReducer } from './records/reducer';
 import { systemReducer } from './system/reducer';
+import { groupsReducer } from './groups/reducer';
 
 const rootReducer = combineReducers({
   system: systemReducer,
   records: recordsReducer,
-  users: usersReducer
+  users: usersReducer,
+  groups: groupsReducer
 });
 
 const store = configureStore({
